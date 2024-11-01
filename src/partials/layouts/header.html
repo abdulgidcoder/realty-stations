@@ -8,7 +8,6 @@
   </head>
 
   <body>
-    
     <div id="app" class="app">
       <div id="app-loader" class="app-loader">
         <div class="app-loader-content">
@@ -35,22 +34,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="/">الرئيسية</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">المشاريع</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/page.html">من نحن</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">تواصل معنا</a>
-                </li>
+                @@loop('link-item.html', '../../data/links.json');
               </ul>
               <button class="btn btn-outline-primary">تسجيل دخول</button>
             </div>
           </div>
         </nav>
       </header>
-   
+ 

@@ -15,6 +15,16 @@ import "@/assets/scss/app.scss";
   }, 1000);
 })(jQuery);
 
+
+// init Swiper:
+const slideshow = new Swiper(".slideshow .swiper", {
+  slidesPerView: 1, 
+  navigation: {
+    nextEl: ".slideshow .swiper-button-next",
+    prevEl: ".slideshow .swiper-button-prev",
+  },
+  modules: [Navigation],
+});
 // init Swiper:
 const projects = new Swiper(".featured-projects .swiper", {
   slidesPerView: 1,
