@@ -1,22 +1,22 @@
 [
   {
     "title": "الرئيسية",
-    "url": "/"
+    "url": "./index.html"
   },
   {
     "title": "المشاريع",
-    "url": "/projects.html"
+    "url": "./projects.html"
   },
   {
     "title": "البلاغات والاستعلام",
-    "url": "/inquiries.html"
+    "url": "./inquiries.html"
   },
   {
     "title": "من نحن",
-    "url": "/about.html"
+    "url": "./about.html"
   },
   {
     "title": "تواصل معنا",
-    "url": "/contact.html"
+    "url": "./contact.html"
   }
 ]

@@ -1,23 +1,22 @@
 [
   {
     "title": "الرئيسية",
-    "url": "/"
-  },
-
+    "url": "./index.html"
+  }, 
   {
     "title": "من نحن",
-    "url": "/about.html"
+    "url": "./about.html"
   },
   {
     "title": "سياسة الخصوصية",
-    "url": "/privacy-policy.html"
+    "url": "./privacy-policy.html"
   },
   {
     "title": "الشروط والاحكام",
-    "url": "/terms-conditions.html"
+    "url": "./terms-conditions.html"
   },
   {
     "title": "اتصل بنا",
-    "url": "/contact.html"
+    "url": "./contact.html"
   }
 ]
