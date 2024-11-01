@@ -1,20 +1,18 @@
-import jQuery from "jquery";
 import "bootstrap";
 // core version + navigation, pagination modules:
 import Swiper from "swiper";
-import { Navigation, Pagination , Autoplay} from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 // import Swiper and modules styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "@/assets/scss/app.scss";
 
-(function ($) {
+document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     document.getElementById("app-loader").style.display = "none";
   }, 800);
-})(jQuery);
-
+});
 // init Swiper:
 const slideshow = new Swiper(".slideshow .swiper", {
   slidesPerView: 1,
@@ -109,21 +107,21 @@ function loadGoogleMapsAPI(callback) {
 }
 
 // Function to initialize the map
-const  initMap = ()=>{
+const initMap = () => {
   const mapContainer = document.querySelector(".google-map");
   if (!mapContainer) return;
 
   // Get coordinates from data attributes
   const lat = parseFloat(mapContainer.getAttribute("data-map-lat"));
   const lng = parseFloat(mapContainer.getAttribute("data-map-lng"));
-  const location = { lat, lng }; 
+  const location = { lat, lng };
   const map = new google.maps.Map(mapContainer, {
     zoom: 18,
     center: location,
   });
- 
+
   const customIcon = {
-    url: "assets/images/favicon.png",  
+    url: "assets/images/favicon.png",
     scaledSize: new google.maps.Size(50, 50),
   };
 
@@ -132,11 +130,9 @@ const  initMap = ()=>{
     map: map,
     icon: customIcon,
   });
-}
+};
 
 loadGoogleMapsAPI("initMap");
 window.initMap = initMap;
 
- loadGoogleMapsAPI("initMap");
-
- 
+loadGoogleMapsAPI("initMap");
