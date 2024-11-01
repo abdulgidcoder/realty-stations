@@ -121,7 +121,7 @@ const initMap = () => {
   });
 
   const customIcon = {
-    url: "assets/images/favicon.png",
+    url: "assets/app.png",
     scaledSize: new google.maps.Size(50, 50),
   };
 
