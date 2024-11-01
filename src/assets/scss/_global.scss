@@ -1,0 +1,107 @@
+body {
+  font-family: "ExpoArabic", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+a {
+  color: var(--primary);
+  transition: .3s ease;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-weight: 800;
+  font-size: 2.125rem;
+  margin-bottom: 24px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.7;
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1440px;
+  }
+}
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  height: 48px;
+  padding: 0 1rem;
+  border-radius: 5px;
+  align-items: center;
+  display: inline-flex;
+  .app-icon { 
+    width: 14px;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  &:hover {
+    color: var(--primary);
+    background-color: #fff;
+    border-color: var(--primary);
+  }
+}
+.btn-outline-primary {
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  &:hover {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+}
+
+.btn-secondary {
+  background-color: var(--black);
+  border-color: var(--black);
+  &:hover {
+    color: var(--black);
+    background-color: #fff;
+    border-color: var(--black);
+  }
+}
+
+.form-control,
+.form-select {
+  font-size: 16px;
+  height: 48px;
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+
+.app-icon {
+  display: inline-block;
+  width: var(--size);
+  svg {
+    max-width: 100%;
+    max-height: var(--size);
+    height: auto;
+    fill: currentColor;
+  }
+}

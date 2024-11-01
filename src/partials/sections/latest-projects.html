@@ -1,0 +1,20 @@
+<section class="featured-projects">
+  <div class="container">
+    <div class="section-title">
+      <h2 class="h1">احدث المشاريع</h2>
+      <p>بعض المشاريع المميزة التي اخترناها</p>
+    </div>
+    <div class="app-swiper-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          @@loop('../project-box.html', '../../data/data.json');
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="text-end mt-4">
+      <button class="btn btn-outline-primary">عرض الكل{{ loadSvg('angle-left.svg' ,'ms-2') }}</button>
+    </div>
+  </div>
+</section>

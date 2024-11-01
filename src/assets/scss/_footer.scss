@@ -1,0 +1,39 @@
+/* Footer */
+.app-footer {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  .logo{
+    img{
+      height: 80px;
+    }
+  }
+  .footer-link {
+    color: var(--gray);
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+     &:hover{
+      color: var(--primary);
+    }
+  }
+  .social-links a {
+    color: var(--gray);
+    &:not(:last-child){
+      margin-left: 20px; 
+    }
+    &:hover{
+      color: var(--primary);
+    }
+    .app-icon{
+      --size: 20px; 
+    }
+  }
+  &-bottom{ 
+    padding-top: 40px;
+    margin-top: 40px; 
+    border-top: 1px solid var(--gray);
+  }
+  .copy-right{
+    font-weight: 500;
+  }
+}

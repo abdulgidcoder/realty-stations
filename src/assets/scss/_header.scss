@@ -1,0 +1,43 @@
+/* Header */
+.app-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0px #8c8c8c61;
+  .navbar {
+    padding: 15px 0;
+    &-brand {
+      margin-left: 35px;
+      img {
+        height: 70px;
+      }
+    }
+    .navbar-toggler {
+      padding: 0;
+      border: none;
+      font-size: 22px;
+      color: var(--primary);
+      outline: none;
+      box-shadow: none;
+    }
+    .nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--gray);
+      &:hover {
+        color: var(--black);
+      }
+    }
+    @media (max-width: 991px) {
+      .nav-item {
+        margin-bottom: 10px;
+      }
+      .navbar-collapse {
+        text-align: center;
+      }
+    }
+  }
+}

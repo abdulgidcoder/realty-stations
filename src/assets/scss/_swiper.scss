@@ -1,0 +1,32 @@
+.app-swiper-container {
+  position: relative;
+  padding-bottom: 20px;
+  --swiper-theme-color: var(--primary);
+  .swiper-wrapper {
+    height: auto;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 25px;
+    --swiper-navigation-sides-offset: -45px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    color: var(--primary);
+    box-shadow: 0 0 5px #00000014;
+    border-radius: 50%;
+    @media screen and (max-width: 992px) {
+      --swiper-navigation-sides-offset: -25px;
+    }
+    @media screen and (max-width: 767px) {
+      --swiper-navigation-sides-offset: 0;
+    }
+  }
+  .swiper-pagination {
+    --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-bottom: 0;
+    --swiper-pagination-bullet-horizontal-gap: 7px;
+  }
+}

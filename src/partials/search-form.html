@@ -1,0 +1,39 @@
+<form action="" class="mb-0">
+  <div class="row g-3">
+    <div class="col-md-6 col-lg-4 col-xl-3">
+      <input
+        type="text"
+        class="form-control search-input"
+        placeholder="بحث المدينة"
+      />
+    </div>
+    <div class="col-md-6 col-lg-4 col-xl-3">
+      <select class="form-select">
+        <option selected>اختار المنطقة</option>
+        <option value="1">الرياض</option>
+        <option value="2">جدة</option>
+        <option value="3">الدمام</option>
+      </select>
+    </div>
+    <div class="col-md-6 col-lg-4 col-xl-3">
+      <select class="form-select">
+        <option selected>اختارالنوع</option>
+        <option value="1">ساكنى</option>
+        <option value="2">تجارى</option>
+      </select>
+    </div>
+    <div class="col-md-6 col-lg-4 col-xl-3">
+      <button
+        type="button"
+        class="btn btn-outline-primary me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#mapSearch"
+      >
+        {{ loadSvg('map-marker-alt.svg' , 'me-2') }} بحث الخريطة
+      </button>
+      <button class="btn btn-primary">
+        {{ loadSvg('search.svg' , 'me-2') }} بحث
+      </button>
+    </div>
+  </div>
+</form>
