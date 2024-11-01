@@ -1,0 +1,63 @@
+@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
+<main class="app-main">
+  @@include('partials/layouts/hero.html', { "title": "تواصل معنا" });
+  <section class="contact-section">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="contact-info">
+          <h2 class="mb-4">تواصل معنا</h2>
+          <ul class="p-0">
+            <li>
+              @@include('partials/icon.html', { "name": "map-marker-alt.svg",
+              "classes" : "me-2" });
+              <p>الطريق الدائري الجنوبي حي العزيزية، الرياض ، المملكة
+                العربية السعودية .
+              </p>
+            </li>
+            <li>
+              @@include('partials/icon.html', { "name": "mobile-alt.svg",
+              "classes" : "me-2" });
+              <p><a href="tel:+9665000000000">+9665000000000</a></p>
+            </li>
+            <li>
+              @@include('partials/icon.html', { "name": "envelope.svg",
+              "classes" : "me-2" });
+              <p>
+                <a href="mailto:info@realty-stations.com"
+                  >info@realty-stations.com</a
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h3 class="mb-4">اترك رسالة</h3>
+          <form>
+            <div class="mb-3">
+              <labe class="form-label">
+                <input type="text" class="form-control" placeholder="الاسم" />
+              </labe>
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="البريد الالكترونى"
+              />
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" placeholder="الجوال" />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" placeholder="الرسالة"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">ارسال</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+@@include('partials/layouts/footer.html');

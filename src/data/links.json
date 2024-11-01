@@ -5,7 +5,11 @@
   },
   {
     "title": "المشاريع",
-    "url": "/"
+    "url": "/projects.html"
+  },
+  {
+    "title": "البلاغات والاستعلام",
+    "url": "/inquiries.html"
   },
   {
     "title": "من نحن",
@@ -13,6 +17,6 @@
   },
   {
     "title": "تواصل معنا",
-    "url": "/"
+    "url": "/contact.html"
   }
 ]

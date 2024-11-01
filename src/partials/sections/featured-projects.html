@@ -4,17 +4,17 @@
       <h2 class="h1">احدث المشاريع</h2>
       <p>بعض المشاريع المميزة التي اخترناها</p>
     </div>
-    <div class="app-swiper-container">
+    <div class="app-swiper-container px-5 px-md-0">
       <div class="swiper">
         <div class="swiper-wrapper">
-          @@loop('../layouts/project-box.html', '../../data/data.json');
+          @@loop('../layouts/project-slide.html', '../../data/data.json');
         </div>
       </div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
     <div class="text-end mt-4">
-      <button class="btn btn-outline-primary">عرض الكل{{ loadSvg('angle-left.svg' ,'ms-2') }}</button>
+      <a href="/projects.html" class="btn btn-outline-primary">عرض الكل{{ loadSvg('angle-left.svg' ,'ms-2') }}</a>
     </div>
   </div>
 </section>

@@ -6,14 +6,33 @@
 @use "loader" as *;
 @use "header" as *;
 @use "footer" as *;
+@use "pagination" as *;
+
 @use "project-box" as *;
 @use "home" as *;
+@use "single-project" as *;
 
 #app {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
 }
 .app-main {
+  min-height: 70vh;
   margin-top: 112px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.contact-info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+}
+
+.contact-info ul li .app-icon {
+  color: var(--primary);
+  --size: 18px;
+  margin-bottom: 15px;
+  margin-right: 15px;
 }

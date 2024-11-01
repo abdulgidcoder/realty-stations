@@ -1,0 +1,21 @@
+.pagination {
+  --bs-pagination-active-bg: var(--primary);
+  --bs-pagination-color: var(--black);
+  --bs-pagination-active-color: #fff;
+  .page-link {
+    border: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    text-align: center;
+    border-radius: 50% !important;
+    margin: 0 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-icon {
+    --size: 18px;
+  }
+}

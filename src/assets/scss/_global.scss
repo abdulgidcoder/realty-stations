@@ -7,9 +7,9 @@ body {
 
 a {
   color: var(--primary);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -50,9 +50,10 @@ h6 {
   height: 48px;
   padding: 0 1rem;
   border-radius: 5px;
-  align-items: center;
   display: inline-flex;
-  .app-icon { 
+  justify-content: center;
+  align-items: center;
+  .app-icon {
     width: 14px;
   }
 }
@@ -65,6 +66,14 @@ h6 {
     background-color: #fff;
     border-color: var(--primary);
   }
+}
+
+.btn-sm {
+  font-size: 14px;
+  font-weight: 500;
+  height: 38px;
+  border-radius: 5px;
+  padding: 0 15px;
 }
 .btn-outline-primary {
   background-color: #fff;
@@ -93,15 +102,48 @@ h6 {
   height: 48px;
   padding: 0 1rem;
   border-radius: 5px;
+  text-align: right;
+}
+
+textarea.form-control {
+  padding: 1rem;
+  height: auto;
+  min-height: 90px;
 }
 
 .app-icon {
-  display: inline-block;
-  width: var(--size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size, 14px);
+  height: var(--size, 14px);
   svg {
     max-width: 100%;
-    max-height: var(--size);
+    max-height: var(--size, 14px);
     height: auto;
     fill: currentColor;
+  }
+}
+
+.app-card {
+  padding: 18px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.app-meta {
+  span {
+    font-size: 14px;
+    display: inline-block;
+    &:not(:last-child) {
+      margin-left: 15px;
+    }
+    .app-icon {
+      --size: 18px;
+      margin-left: 5px;
+      color: var(--primary);
+    }
   }
 }

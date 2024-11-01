@@ -22,8 +22,9 @@ export default defineConfig({
         assetFileNames: "assets/app.[ext]",
       },
       input: {
-        main: resolve(__dirname, "src/index.html"),
-        about: resolve(__dirname, "src/about.html"),
+        main: path.resolve(__dirname, "src/index.html"),
+        about: path.resolve(__dirname, "src/about.html"),
+        contact: path.resolve(__dirname, "src/contact.html"),
       },
     },
   },
@@ -41,28 +42,20 @@ export default defineConfig({
       customFunctions: {
         loadSvg: function (svgFile, classes = "") {
           try {
-            // Remove leading slash if present
             const cleanPath = svgFile.startsWith("/")
               ? svgFile.slice(1)
               : svgFile;
-
-            // Construct the correct absolute path
             const svgPath = path.join(
               __dirname,
               "src",
               "/assets/images/icons/" + cleanPath
             );
-
-            // Check if file exists
             if (!fs.existsSync(svgPath)) {
               console.error(`SVG file not found at path: ${svgPath}`);
               return "";
             }
-
-            // Read and return the SVG content
             const svgContent = fs
               .readFileSync(svgPath, "utf-8")
-              // Remove XML declaration and comments
               .replace(/<\?xml.*\?>/, "")
               .replace(/<!--.*-->/s, "")
               .trim();

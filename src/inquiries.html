@@ -1,0 +1,56 @@
+@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
+<main class="app-main">
+  @@include('partials/layouts/hero.html', { "title": "البلاغات والاستعلام" });
+  <section class="contact-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="contact-form">
+            <h4 class="mb-4">البلاغ</h4>
+            <form>
+              <div class="mb-3">
+                <labe class="form-label">
+                  <input type="text" class="form-control" placeholder="الاسم" />
+                </labe>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="البريد الالكترونى"
+                />
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="الجوال" />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="الرسالة"></textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">ارسال</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-form">
+            <h4 class="mb-4">الاستعلام برقم البلاغات</h4>
+            <form class="row g-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="رقم البلاغ"
+                />
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary" type="button">استعلام</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+@@include('partials/layouts/footer.html');
