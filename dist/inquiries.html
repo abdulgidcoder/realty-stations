@@ -68,26 +68,61 @@
         <li class="breadcrumb-item">
           <a href="/">الرئيسية</a>
         </li> 
-        <li class="breadcrumb-item active">من نحن</li>
+        <li class="breadcrumb-item active">البلاغات والاستعلام</li>
       </ol>
     </nav>
-    <h1 class="h2">من نحن</h1>
+    <h1 class="h2">البلاغات والاستعلام</h1>
   </div>
 </div>
-  <section class="section">
+  <section class="contact-section">
     <div class="container">
-      <p>
-        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
-        القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
-        التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ
-        طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا
-        يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من
-        برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل
-        إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث
-        ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين
-        ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة،
-        وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.
-      </p>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="contact-form">
+            <h4 class="mb-4">البلاغ</h4>
+            <form>
+              <div class="mb-3">
+                <labe class="form-label">
+                  <input type="text" class="form-control" placeholder="الاسم" />
+                </labe>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="البريد الالكترونى"
+                />
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="الجوال" />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="الرسالة"></textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">ارسال</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-form">
+            <h4 class="mb-4">الاستعلام برقم البلاغات</h4>
+            <form class="row g-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="رقم البلاغ"
+                />
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary" type="button">استعلام</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </main>
