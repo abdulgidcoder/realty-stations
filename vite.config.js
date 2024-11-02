@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import fs from "fs";
 import path from "path";
 import { resolve } from "path";
+import { error } from "console";
 
 // Get the directory name of the current module
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -31,6 +32,11 @@ export default defineConfig({
         project: path.resolve(__dirname, "src/single-project.html"),
         projects: path.resolve(__dirname, "src/projects.html"),
         terms: path.resolve(__dirname, "src/terms-conditions.html"),
+        pricing: path.resolve(__dirname, "src/pricing.html"),
+        updates: path.resolve(__dirname, "src/project-updates.html"),
+        login: path.resolve(__dirname, "src/login.html"),
+        register: path.resolve(__dirname, "src/register.html"),
+        error: path.resolve(__dirname, "src/404.html"),
       },
     },
   },
