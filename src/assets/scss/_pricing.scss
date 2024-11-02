@@ -1,0 +1,60 @@
+.pricing-wrap {
+  text-align: center; 
+  position: relative;
+  border: 1px solid var(--gray2);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  .pricing-header {
+    padding: 30px 0 20px;
+    width: 100%;
+    background: var(--bg-light);
+    border-radius: 5px;
+  }
+  .pricing-header .pr-title {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  .pricing-header .pr-subtitle {
+    font-style: italic;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .pricing-value {
+    position: relative;
+    display: table;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .pr-value {
+    font-size: 4em;
+    position: relative;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .pr-value sup {
+    font-size: 1.5rem;
+    vertical-align: super;
+  }
+  .recommended .pr-value {
+    color: #27cc8f !important;
+  }
+
+  .pricing-body ul {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
+  .pricing-body ul li {
+    list-style: none;
+    padding: 14px 0px;
+    position: relative;
+    border-bottom: 1px dashed var(--gray2);
+  }
+  .pricing-body ul li:last-child {
+    border-bottom: none;
+  } 
+}

@@ -1,7 +1,8 @@
 @@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
-<main class="app-main pb-0">
+<main class="app-main">
   @@include('partials/layouts/hero.html', { "title": "عن الشركة" });
-  <section class="company-info-section py-4 mb-5">
+  <div class="app-main-content pb-0">
+    <section class="company-info-section mb-5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-sm-6 col-lg-3  mb-lg-0 mb-3 text-center">
@@ -36,5 +37,6 @@
   </section>
   <!-- Partners Section -->
   @@include('partials/sections/partners.html', {"title": "اقترحنا لك",  "clasess": "bg-light"});
+  </div>
 </main>
 @@include('partials/layouts/footer.html');

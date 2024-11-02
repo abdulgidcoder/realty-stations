@@ -1,3 +1,9 @@
+html {
+  font-size: 16px;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
 body {
   font-family: "ExpoArabic", sans-serif;
   font-size: 1rem;
@@ -33,6 +39,23 @@ h5,
 h6 {
   font-weight: 700;
   line-height: 1.7;
+  color: var(--dark);
+}
+
+p {
+  margin-bottom: 16px;
+  line-height: 1.8;
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid var(--gray2);
+  opacity: 1;
 }
 @media (min-width: 1400px) {
   .container,
@@ -45,17 +68,24 @@ h6 {
   }
 }
 .btn {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 1rem;
   height: 48px;
   padding: 0 1rem;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   display: inline-flex;
   justify-content: center;
   align-items: center;
   .app-icon {
     width: 14px;
   }
+}
+.btn-sm {
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 38px;
+  border-radius: var(--border-radius);
+  padding: 0 15px;
 }
 
 .btn-primary {
@@ -68,13 +98,6 @@ h6 {
   }
 }
 
-.btn-sm {
-  font-size: 14px;
-  font-weight: 500;
-  height: 38px;
-  border-radius: 5px;
-  padding: 0 15px;
-}
 .btn-outline-primary {
   background-color: #fff;
   color: var(--primary);
@@ -87,21 +110,31 @@ h6 {
 }
 
 .btn-secondary {
-  background-color: var(--black);
-  border-color: var(--black);
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
   &:hover {
-    color: var(--black);
+    color: var(--secondary);
     background-color: #fff;
-    border-color: var(--black);
+    border-color: var(--secondary);
+  }
+}
+.btn-outline-secondary {
+  background-color: #fff;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  &:hover {
+    color: #fff;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
   }
 }
 
 .form-control,
 .form-select {
-  font-size: 16px;
+  font-size: 1rem;
   height: 48px;
   padding: 0 1rem;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   text-align: right;
 }
 
@@ -109,6 +142,11 @@ textarea.form-control {
   padding: 1rem;
   height: auto;
   min-height: 90px;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .app-icon {
@@ -126,16 +164,21 @@ textarea.form-control {
 }
 
 .app-card {
-  padding: 18px;
-  border-radius: 8px;
+  padding: 1.25rem;
+  border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  &-title {
+    border-bottom: 1px solid var(--gray2);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .app-meta {
   span {
-    font-size: 14px;
+    font-size: 0.875rem;
     display: inline-block;
     &:not(:last-child) {
       margin-left: 15px;
@@ -143,7 +186,36 @@ textarea.form-control {
     .app-icon {
       --size: 18px;
       margin-left: 5px;
-      color: var(--primary);
+      color: var(--gray);
     }
   }
+}
+
+.bg-light {
+  background-color: var(--bg-gray) !important;
+}
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  h2 {
+    color: var(--primary);
+    margin-bottom: 0;
+  }
+  p {
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+  }
+}
+
+.breadcrumb {
+  margin-bottom: 0;
 }

@@ -1,13 +1,17 @@
 .single-project {
- 
   .slideshow-project {
-   .swiper-button-prev,
-  .swiper-button-next {
-    --swiper-navigation-size: 25px;
-    --swiper-navigation-sides-offset: 15px;
-  }
+    img {
+      border-radius: 6px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      --swiper-navigation-sides-offset: 10px;
+      @media screen and (max-width: 450px) {
+        --swiper-navigation-sides-offset: 0;
+      }
+    }
     .swiper-pagination {
-      --swiper-pagination-bottom: 15px;
+      --swiper-pagination-bottom: 8px;
       --swiper-pagination-bullet-inactive-color: #fff;
       --swiper-pagination-bullet-inactive-opacity: 0.5;
     }
@@ -38,7 +42,7 @@
       align-items: center;
       .app-icon {
         color: var(--primary);
-        border: 1px solid var(--gray);
+        border: 1px solid var(--gray2);
         --size: 40px;
         border-radius: 5px;
         padding: 10px;
@@ -47,7 +51,7 @@
         span,
         strong {
           display: block;
-          font-size: 14px;
+          font-size: 0.875rem;
           line-height: 1.2;
           color: var(--black);
         }
@@ -55,7 +59,3 @@
     }
   }
 }
-
-
-
- 

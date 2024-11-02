@@ -1,10 +1,10 @@
-<section class="featured-projects">
+<section class="featured-projects bg-light">
   <div class="container">
     <div class="section-title">
-      <h2 class="h1">احدث المشاريع</h2>
+      <h2>احدث المشاريع</h2>
       <p>بعض المشاريع المميزة التي اخترناها</p>
     </div>
-    <div class="app-swiper-container px-5 px-md-0">
+    <div class="app-swiper-container ">
       <div class="swiper">
         <div class="swiper-wrapper">
           @@loop('../layouts/project-slide.html', '../../data/data.json');
@@ -13,8 +13,10 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    <div class="text-end mt-4">
-      <a href="./projects.html" class="btn btn-outline-primary">عرض الكل{{ loadSvg('angle-left.svg' ,'ms-2') }}</a>
+    <div class="text-center mt-4">
+      <a href="./projects.html" class="btn btn-outline-primary"
+        >عرض الكل{{ loadSvg('angle-left.svg' ,'ms-2') }}</a
+      >
     </div>
   </div>
 </section>

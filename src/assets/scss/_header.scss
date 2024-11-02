@@ -12,7 +12,7 @@
     &-brand {
       margin-left: 35px;
       img {
-        height: 70px;
+        height: 50px;
       }
     }
     .navbar-toggler {
@@ -29,7 +29,7 @@
       }
     }
     .nav-link {
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 500;
       color: var(--black);
       &:hover {
@@ -38,13 +38,31 @@
     }
     @media (max-width: 991px) {
       .nav-item {
-        margin-bottom: 10px;
-        margin-left: 0!important;
-
+        margin-left: 0 !important;
+        &:last-child{
+           .nav-link { 
+        border-bottom: 1px solid var(--gray2);
+      }
+        }
+      }
+      .nav-link {
+        padding: 14px 0;
+        border-top: 1px solid var(--gray2);
       }
       .navbar-collapse {
         text-align: center;
       }
+      .navbar-nav {
+        padding: 20px 0;
+       
+
+      }
     }
   }
+}
+
+.hero-page {
+  background-color: #fff;
+  border-bottom: 1px solid var(--gray2);
+  padding: 16px 0;
 }

@@ -1,9 +1,9 @@
 @@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
 <main class="app-main single-project pb-0">
-  <header class="single-project-head pb-4 border-bottom">
+  <header class="single-project-head py-4 border-bottom">
     <div class="container">
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb py-3">
+        <ol class="breadcrumb mb-2">
           <li class="breadcrumb-item">
             <a href="./index.html">الرئيسية</a>
           </li>
@@ -16,42 +16,46 @@
         </ol>
       </nav>
       <div class="d-md-flex justify-content-md-between align-items-center">
-          <p class="app-meta mb-0">
-            <span>
-              @@include('partials/icon.html', { "name": "calendar-alt.svg",
-              "classes" : "me-2" });منذ يومين</span
-            >
-            <span>
-              @@include('partials/icon.html', { "name": "view.svg", "classes" :
-              "me-2" });15 مشاهدة</span
-            >
-          </p>
-          <ul class="list-inline my-2 my-lg-0 text-end">
-            <li class="list-inline-item me-2">
-              <a href="#" class="btn btn-outline-danger btn-sm">
-                @@include('partials/icon.html', { "name": "heart.svg",
-              "classes" : "me-2" });</i>حفظ
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="btn btn-outline-danger btn-sm">
-                @@include('partials/icon.html', { "name": "share-alt.svg",
+        <p class="app-meta mb-0">
+          <span>
+            @@include('partials/icon.html', { "name": "calendar-alt.svg",
+            "classes" : "" });منذ يومين</span
+          >
+          <span>
+            @@include('partials/icon.html', { "name": "view.svg", "classes" : ""
+            });15 مشاهدة</span
+          >
+        </p>
+        <ul class="list-inline my-2 my-lg-0 text-end">
+          <li class="list-inline-item me-2">
+            <a href="#" class="btn btn-outline-dark btn-sm">
+              @@include('partials/icon.html', { "name": "heart.svg", "classes" :
+              "me-2" });حفظ
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="./inquiries.html" class="btn btn-outline-dark btn-sm">
+              @@include('partials/icon.html', { "name": "flag.svg", "classes" :
+              "me-2" });الابلاغ
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn btn-outline-dark btn-sm">
+              @@include('partials/icon.html', { "name": "share-alt.svg",
               "classes" : "me-2" });مشارك
-              </a>
-            </li> 
-          </ul>
-        </div>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="d-md-flex justify-content-md-between align-items-center mb-6">
         <div>
-          
           <h2 class="single-project-title">
             ريلتي ستيشنز العقارية تساعدك في البحث عن العقارات
           </h2>
           <p class="app-meta mb-0">
             <span>
               @@include('partials/icon.html', { "name": "map-marker-alt.svg",
-              "classes" : "me-2" });السعودية, منطقة الرياض, الرياض,
-              القادسية</span
+              "classes" : "" });السعودية, منطقة الرياض, الرياض, القادسية</span
             >
           </p>
         </div>
@@ -65,31 +69,41 @@
     <div class="single-project-content bg-light py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <div class="slideshow-project mb-5">
-              <div class="container">
-                <div class="app-swiper-container pb-0">
-                  <div class="swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img loading="lazy" src="./assets/images/slide-1.jpg" alt="blog" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img loading="lazy" src="./assets/images/slide-2.jpg" alt="blog" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img loading="lazy" src="./assets/images/slide-1.jpg" alt="blog" />
-                      </div> 
+          <div class="col-lg-7 col-xl-8">
+            <section class="slideshow-project mb-4">
+              <div class="app-swiper-container p-0">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        loading="lazy"
+                        src="./assets/images/slide-1.jpg"
+                        alt="blog"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        loading="lazy"
+                        src="./assets/images/slide-2.jpg"
+                        alt="blog"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        loading="lazy"
+                        src="./assets/images/slide-1.jpg"
+                        alt="blog"
+                      />
                     </div>
                   </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
                 </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
-            </div>
+            </section>
             <section class="app-card mb-4">
-              <h4 class="mb-4">تفاصيل المشروع</h4>
+              <h5 class="app-card-title mb-4">تفاصيل المشروع</h5>
               <p class="mb-0">
                 هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
                 سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
@@ -105,7 +119,7 @@
               </p>
             </section>
             <section class="single-project-features app-card mb-4">
-              <h4 class="mb-4">مميزات</h4>
+              <h5 class="app-card-title mb-4">مميزات</h5>
               <ul>
                 <li>
                   @@include('partials/icon.html', { "name": "home.svg",
@@ -116,8 +130,8 @@
                   </div>
                 </li>
                 <li>
-                  @@include('partials/icon.html', { "name": "tag.svg",
-                  "classes" : "me-3" });
+                  @@include('partials/icon.html', { "name": "tag.svg", "classes"
+                  : "me-3" });
                   <div class="content">
                     <span>15</span>
                     <strong>عدد الغرف</strong>
@@ -134,7 +148,7 @@
               </ul>
             </section>
             <section class="app-card mb-4">
-              <h4 class="mb-4">تفاصيل اضافية</h4>
+              <h5 class="app-card-title mb-4">تفاصيل اضافية</h5>
               <div class="row">
                 <dl class="col-sm-6 mb-0 d-flex">
                   <dt class="font-weight-500 text-heading pe-2">عدد الغرف:</dt>
@@ -154,16 +168,45 @@
                 </dl>
               </div>
             </section>
+            <section class="app-card mb-4">
+              <h6 class="app-card-title">الموقع</h6>
+              <div
+                class="google-map"
+                style="width: 100%; height: 350px"
+                data-map-lat="37.7749"
+                data-map-lng="-122.4194"
+              ></div>
+            </section>
           </div>
-          <aside class="col-lg-4 ps-xl-4 single-project-sidebar">
-             <div class="app-card mb-4 text-center">
-               <a href="./inquiries.html" target="_blank" class="btn btn-primary me-3">تجه للمشروع</a> 
-               <a href="./inquiries.html" target="_blank" class="btn btn-danger">ابلغ عن المشروع</a>   
-            </div>
-            <div class="app-card mb-4">
-              <h5>معلومات المالك</h5>
-              <div class="row align-items-center">
-                <div class="col-3 owner-image">
+          <aside class="col-lg-5 col-xl-4 ps-xl-4 single-project-sidebar">
+            <div class="sticky-top">
+              <section class="app-card mb-4">
+                <div class="row row-col-2">
+                  <div class="col">
+                    <a
+                      href="./"
+                      target="_blank"
+                      class="btn btn-secondary w-100"
+                      download=""
+                    >
+                      @@include('partials/icon.html', { "name": "download.svg",
+                      "classes" : "me-2" }); تحميل PDF</a
+                    >
+                  </div>
+                  <div class="col">
+                    <a
+                      href="./project-updates.html" 
+                      class="btn btn-block btn-outline-secondary w-100"
+                    >
+                      @@include('partials/icon.html', { "name": "reload.svg",
+                      "classes" : "me-2" });التحديثات</a
+                    >
+                  </div>
+                </div>
+              </section>
+              <section class="app-card mb-4">
+                <h6 class="text-center app-card-title">معلومات المالك</h6>
+                <div class="owner-image mx-auto w-50 mb-3">
                   <a href="#">
                     <img
                       src="assets/images/avatar.png"
@@ -172,49 +215,71 @@
                     />
                   </a>
                 </div>
-                <div class="col-9 owner-info">
-                  <h5>احمد على</h5>
+                <div class="owner-info text-center">
+                  <h5 class="mb-0">احمد على</h5>
                   <p class="app-meta mb-0">
                     <span>
                       @@include('partials/icon.html', { "name":
-                      "map-marker-alt.svg", "classes" : "me-2" });السعودية,
-                      منطقة الرياض, الرياض, القادسية</span
+                      "map-marker-alt.svg", "classes" : "" });السعودية, منطقة
+                      الرياض, الرياض, القادسية</span
                     >
                   </p>
                 </div>
-              </div>
-              <div class="border-top pt-3 mt-3">
-                <a
-                  href="tel:01011111111"
-                  
-                  target="_blank"
-                  class="btn btn-outline-primary me-4"
-                  >اتصل الان</a
-                >
-                <a
-                  href="https://wa.me/0201011111111"
-                  rel="noopener"
-                  target="_blank"
-                  class="btn btn-success"
-                  >واتساب</a
-                >
-              </div>
-            </div>
-            <div class="app-card">
-              <h5>الموقع</h5>
-              <p class="app-meta mb-4">
-                <span>
-                  @@include('partials/icon.html', { "name":
-                  "map-marker-alt.svg", "classes" : "me-2" });السعودية, منطقة
-                  الرياض, الرياض, القادسية</span
-                >
-              </p>
-              <div
-                class="google-map"
-                style="width: 100%; height: 300px"
-                data-map-lat="37.7749"
-                data-map-lng="-122.4194"
-              ></div>
+                <div class="border-top pt-3 mt-3 text-center">
+                  <a
+                    href="tel:01011111111"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary me-3"
+                    >اتصل الان</a
+                  >
+                  <a
+                    href="https://wa.me/0201011111111"
+                    rel="noopener"
+                    target="_blank"
+                    class="btn btn-sm btn-success"
+                    >واتساب</a
+                  >
+                </div>
+              </section>
+              <section class="app-card mb-4">
+                <h6 class="app-card-title">مدير الحجوزات</h6>
+                <div class="row align-items-center">
+                  <div class="col-3 owner-image">
+                    <a href="#">
+                      <img
+                        src="assets/images/avatar.png"
+                        class="img-thumbnail w-100 rounded-circle"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-9 owner-info">
+                    <h5 class="mb-0">احمد على</h5>
+                    <p class="app-meta mb-0">
+                      <span>
+                        @@include('partials/icon.html', { "name":
+                        "map-marker-alt.svg", "classes" : "" });السعودية, منطقة
+                        الرياض, الرياض, القادسية</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="border-top pt-3 mt-3 text-center">
+                  <a
+                    href="tel:01011111111"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary me-3"
+                    >اتصل الان</a
+                  >
+                  <a
+                    href="https://wa.me/0201011111111"
+                    rel="noopener"
+                    target="_blank"
+                    class="btn btn-sm btn-success"
+                    >واتساب</a
+                  >
+                </div>
+              </section>
             </div>
           </aside>
         </div>

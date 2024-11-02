@@ -1,5 +1,7 @@
  
 .project-box {
+  max-width: 330px;
+    margin: 0 auto;
   &_wrap {
     border-radius: 8px;
     overflow: hidden;
@@ -46,11 +48,13 @@
         display: inline-flex;
         align-items: center;
         font-weight: 500;
+        font-size: 0.75rem;
+        vertical-align: middle;
         &:not(:last-child) {
           margin-left: 0.75rem;
         }
         .app-icon {
-          --size: 18px;
+          --size: 16px;
           color: var(--primary);
           margin-left: 5px;
         }
@@ -71,10 +75,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    border-top: 1px solid #f8f9fa;
+    border-top: 1px solid var(--gray2);
   }
   &_price {
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 600;
     strong {
       color: var(--primary);
@@ -83,18 +87,19 @@
   }
   &_actions {
     a {
-      border: 1px solid var(--gray);
+      border: 1px solid  var(--gray2);
       border-radius: 50%;
       width: 38px;
       height: 38px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 14px;
+      font-size: 0.875rem;
       transition: 0.3s ease;
+      color: var(--secondary);
       &:hover {
-        background-color: var(--primary);
-        border-color: var(--primary);
+        background-color: var(--secondary);
+        border-color: var(--secondary);
         color: #fff;
       }
       &:not(:last-child) {

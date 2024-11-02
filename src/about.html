@@ -1,21 +1,82 @@
 @@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
 <main class="app-main">
   @@include('partials/layouts/hero.html', { "title": "من نحن" });
-  <section class="section">
-    <div class="container">
-      <p>
-        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
-        القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
-        التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ
-        طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا
-        يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من
-        برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل
-        إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث
-        ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين
-        ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة،
-        وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.
-      </p>
-    </div>
-  </section>
+  <div class="app-main-content">
+    <section class="about-section">
+      <div class="container">
+        <div
+          class="row pb-4 row-cols-1 row-cols-lg-2 g-4 align-items-center"
+        >
+          <div class="mt-0 col">
+            <h3>قصتنا</h3>
+            <p>
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات
+              في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها
+              تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد
+              محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص
+              مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب
+              تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال
+              "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد
+              في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم
+              إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض
+              العبارات الفكاهية إليها.
+            </p>
+          </div>
+          <div class="mt-0 col text-center">
+            <img src="assets/images/favicon.png" alt="" />
+          </div>
+        </div>
+        <hr />
+        <div class="row pt-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="feature col">
+            <div class="feature-icon mb-3">
+              <img src="assets/images/favicon.png" alt="" />
+            </div>
+            <h3 class="text-body-emphasis">الرسالة</h3>
+            <p>
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات
+              في الصفحة التي يقرأها.
+            </p>
+            <a href="#" class="icon-link">
+              اتصل بنا
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon mb-3">
+              <img src="assets/images/favicon.png" alt="" />
+            </div>
+            <h3 class="text-body-emphasis">الرويا</h3>
+            <p>
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات
+              في الصفحة التي يقرأها.
+            </p>
+            <a href="#" class="icon-link">
+              اتصل بنا
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon mb-3">
+              <img src="assets/images/favicon.png" alt="" />
+            </div>
+            <h3 class="text-body-emphasis">الهدف</h3>
+            <p>
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات
+              في الصفحة التي يقرأها.
+            </p>
+            <a href="#" class="icon-link">
+              اتصل بنا
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </main>
 @@include('partials/layouts/footer.html');

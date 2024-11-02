@@ -1,27 +1,35 @@
 @@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
 <main class="app-main pb-0">
   @@include('partials/layouts/hero.html', { "title": "المشاريع" });
-  <section class="projects bg-light py-4 ">
-    <div class="container">
-      <div class="row">
-        @@loop('partials/layouts/project-box.html', 'data/data.json');
+  <div class="app-main-content bg-light">
+    <section class="projects">
+      <div class="container">
+        <div class="row">
+          @@loop('partials/layouts/project-box.html', 'data/data.json');
+        </div>
+        <nav class="mt-2">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#">
+                @@include('partials/icon.html', { "name": "angle-right.svg",
+                "classes" : "" });</a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                @@include('partials/icon.html', { "name": "angle-left.svg",
+                "classes" : "" });</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="mt-2">
-        <ul class="pagination justify-content-center">
-          <li class="page-item">
-            <a class="page-link" href="#">  @@include('partials/icon.html', { "name": "angle-right.svg",
-              "classes" : "" });</a>
-          </li>
-          <li class="page-item"><a class="page-link active" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#"> @@include('partials/icon.html', { "name": "angle-left.svg",
-              "classes" : "" });</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
+    </section>
+  </div>
 </main>
 @@include('partials/layouts/footer.html');

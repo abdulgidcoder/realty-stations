@@ -4,23 +4,31 @@
   .swiper-wrapper {
     height: auto;
   }
+  @media screen and (max-width: 767px) {
+    padding: 0 10px;
+  }
 
   .swiper-button-prev,
   .swiper-button-next {
-    --swiper-navigation-size: 25px;
+    --swiper-navigation-size: 12px;
     --swiper-navigation-sides-offset: -45px;
     position: absolute;
-    width: 45px;
-    height: 45px;
+    width: 38px;
+    height: 38px;
     background-color: #fff;
     color: var(--primary);
     box-shadow: 0 0 5px #00000014;
     border-radius: 50%;
     @media screen and (max-width: 992px) {
-      --swiper-navigation-sides-offset: -25px;
+      --swiper-navigation-sides-offset: -45px;
     }
     @media screen and (max-width: 767px) {
       --swiper-navigation-sides-offset: 0;
+    }
+     @media screen and (max-width:450px) {
+      --swiper-navigation-sides-offset: -10px;
+       width: 30px;
+    height: 30px;
     }
   }
   .swiper-pagination {
