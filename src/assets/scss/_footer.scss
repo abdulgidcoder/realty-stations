@@ -1,7 +1,8 @@
 /* Footer */
 .app-footer {
+     border-top: 1px solid var(--gray2);
   padding: 40px 0;
-  background-color: var(--dark);
+  background-color: #fff;
   .logo {
     img {
       height: 50px;
@@ -9,7 +10,7 @@
   }
   .nav {
     .nav-link {
-      color: #fff;
+      color: var(--dark);
       text-decoration: none;
       font-weight: 500;
       &:hover {
@@ -18,7 +19,7 @@
     }
   }
   .social-links a {
-    color: #fff;
+    color: var(--dark);
     &:not(:last-child) {
       margin-left: 20px;
     }
@@ -30,12 +31,11 @@
     }
   }
   &-bottom {
-    border-top: 1px solid #686d81;
+    border-top: 1px solid var(--gray2);
     padding-top: 40px;
     margin-top: 25px;
   }
   .copy-right {
-    font-weight: 500;
-    color: #fff;
+    font-weight: 500; 
   }
 }
