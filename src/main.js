@@ -1,7 +1,7 @@
 import "bootstrap";
 // core version + navigation, pagination modules:
 import Swiper from "swiper";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay, Thumbs } from "swiper/modules";
 // import Swiper and modules styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -76,21 +76,53 @@ const partners = new Swiper(".partners-section .swiper", {
   modules: [Navigation, Pagination],
 });
 
+const projectThumbs = new Swiper(".slideshow-project-thumbs", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  breakpoints: {  
+    992: {
+      slidesPerView: 5, 
+    },
+    1400: {
+      slidesPerView: 6,
+    },
+  },
+}); 
 const slideshowProject = new Swiper(".slideshow-project .swiper", {
-  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 10,
   autoplay: {
     delay: 2500,
   },
   navigation: {
     nextEl: ".slideshow-project .swiper-button-next",
     prevEl: ".slideshow-project .swiper-button-prev",
+  }, 
+  modules: [Navigation, Autoplay, Thumbs],
+  thumbs: {
+    swiper: projectThumbs,
   },
-  pagination: {
-    el: ".slideshow-project .swiper-pagination",
-    clickable: true,
-  },
-  modules: [Navigation, Pagination, Autoplay],
 });
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: "mySwiper2 .swiper-button-next",
+    prevEl: "mySwiper2 .swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+  modules: [Navigation, Autoplay, Thumbs],
+});
+
 
 // Function to load Google Maps API script dynamically
 function loadGoogleMapsAPI(callback) {

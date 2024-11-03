@@ -39,6 +39,14 @@
       }
     }
   }
+   &_location {
+    > span{
+      width: 100%;
+      .app-text-ellipsis{
+        flex-grow: 1;
+      }
+    }
+   }
   &_body {
     padding: 0.9375rem;
     p {
