@@ -2,7 +2,7 @@
 .hero-section {
   min-height: 500px;
   position: relative;
-  padding: 250px 0 50px;
+  padding: 180px 0 50px;
   @media screen and (max-width: 992px) {
     padding: 150px 0 50px;
     text-align: center;
@@ -69,8 +69,8 @@
   }
 }
 
-/* Slideshow */
-.slideshow {
+/* banner-slideshow */
+.banner-slideshow {
   padding: 60px 0 40px;
   .swiper-slide {
     img {

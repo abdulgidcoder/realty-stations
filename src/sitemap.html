@@ -1,0 +1,16 @@
+@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
+<main class="app-main">
+  <div class="app-main-content">
+    <section class="sitemap-section">
+      <div class="container">
+        <h2>الصفحات</h2>
+        <div class="sitemap-grid">
+          <ul class="sitemap-list">
+            @@loop('partials/layouts/link-item.html', 'data/sitemap.json'); 
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+@@include('partials/layouts/footer.html');

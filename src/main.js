@@ -14,15 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 800);
 });
 // init Swiper:
-const slideshow = new Swiper(".slideshow .swiper", {
+const bannerSlideshow = new Swiper(".banner-slideshow .swiper", {
   slidesPerView: 1,
   autoplay: {
     delay: 2500,
   },
   loop: true,
   navigation: {
-    nextEl: ".slideshow .swiper-button-next",
-    prevEl: ".slideshow .swiper-button-prev",
+    nextEl: ".banner-slideshow .swiper-button-next",
+    prevEl: ".banner-slideshow .swiper-button-prev",
   },
   modules: [Navigation, Autoplay],
 });

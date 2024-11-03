@@ -37,6 +37,7 @@ export default defineConfig({
         login: path.resolve(__dirname, "src/login.html"),
         register: path.resolve(__dirname, "src/register.html"),
         error: path.resolve(__dirname, "src/404.html"),
+        sitemap: path.resolve(__dirname, "src/sitemap.html"),
       },
     },
   },

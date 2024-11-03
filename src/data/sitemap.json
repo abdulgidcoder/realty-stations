@@ -1,0 +1,54 @@
+[
+  {
+    "title": "الرئيسية",
+    "url": "./index.html"
+  },
+  {
+    "title": "المشاريع",
+    "url": "./projects.html"
+  },
+  {
+    "title": "تفاصيل المشروع",
+    "url": "./single-project.html"
+  },
+  {
+    "title": "تحديثات المشروع",
+    "url": "./project-updates.html"
+  },
+  {
+    "title": "البلاغات والاستعلام",
+    "url": "./inquiries.html"
+  },
+  {
+    "title": "الشركة",
+    "url": "./company.html"
+  },
+  {
+    "title": "سياسة الخصوصية",
+    "url": "./privacy-policy.html"
+  },
+  {
+    "title": "الشروط والاحكام",
+    "url": "./terms-conditions.html"
+  },
+  {
+    "title": "404",
+    "url": "./404.html"
+  },
+  {
+    "title": "تسجيل الدخول",
+    "url": "./login.html"
+  },
+  {
+    "title": "التسجيل",
+    "url": "./register.html"
+  },
+  {
+    "title": "من نحن",
+    "url": "./about.html"
+  },
+  {
+    "title": "تواصل معنا",
+    "url": "./contact.html"
+  }
+]
