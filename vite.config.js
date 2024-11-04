@@ -24,6 +24,7 @@ export default defineConfig({
       },
       input: {
         main: path.resolve(__dirname, "src/index.html"),
+        main2: path.resolve(__dirname, "src/index2.html"),
         about: path.resolve(__dirname, "src/about.html"),
         contact: path.resolve(__dirname, "src/contact.html"),
         company: path.resolve(__dirname, "src/company.html"),

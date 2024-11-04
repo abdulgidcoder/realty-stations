@@ -1,0 +1,34 @@
+@@include('partials/layouts/header.html', { "title": "%VITE_APP_NAME%" } );
+<main class="app-main">
+  <!-- Hero Section -->
+  @@include('partials/sections/hero-home.html');
+
+  
+  <!-- banner -->
+  @@include('partials/sections/banner-slideshow.html');
+  
+  <section class="ads-section py-4 mb-3">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        <div class="col">
+          <img src="assets/images/project-1.jpg"></img>
+        </div>
+        <div class="col">
+          <img src="assets/images/project-2.jpg"></img>
+        </div>
+        <div class="col">
+          <img src="assets/images/project-1.jpg"></img>
+        </div>
+        <div class="col">
+          <img src="assets/images/project-2.jpg"></img>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Projects -->
+  @@include('partials/sections/featured-projects.html');
+
+  <!-- Partners Section -->
+  @@include('partials/sections/partners.html', {"title": "الشركات المميزة", "clasess": "bg-white"});
+</main>
+@@include('partials/layouts/footer.html');
