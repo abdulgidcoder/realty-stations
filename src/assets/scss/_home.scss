@@ -1,10 +1,9 @@
 /* Hero Section */
-.hero-section {
-  min-height: 500px;
+.hero-section { 
   position: relative;
-  padding: 180px 0 50px;
+  padding: 6.25rem 0 3.75rem;
   @media screen and (max-width: 992px) {
-    padding: 150px 0 50px;
+    // padding: 150px 0 50px;
     text-align: center;
   }
   &::before {

@@ -12,6 +12,41 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     document.getElementById("app-loader").style.display = "none";
   }, 800);
+
+  const featuresMoreLess = () => {
+    const items = document.querySelectorAll(".single-project-features .item");
+    items.forEach((item, index) => {
+      if (index > 6) {
+        item.classList.add("hidden");
+        setTimeout(()=> item.style.display = 'none', 290)
+      }
+    });
+  };
+  const featuresMore = () => {
+    const hiddenItems = document.querySelectorAll(
+      ".single-project-features .hidden"
+    );
+    hiddenItems.forEach((item) => {
+      item.classList.remove("hidden");
+      setTimeout(() => (item.style.display = "inline-flex"), 290);
+    });
+  };
+  featuresMoreLess(); 
+  document
+    .getElementById("project-features_show-more")
+    .addEventListener("click", function () {
+      const hiddenItems = document.querySelectorAll(
+        ".single-project-features .item.hidden"
+      );
+      const isShowingMore = hiddenItems.length === 0; // Check if currently showing all items
+      if (isShowingMore) {
+        featuresMoreLess();
+        this.textContent = "عرض اكثر";
+      } else {
+        featuresMore();
+        this.textContent = "عرض اقل";
+      }
+    });
 });
 // init Swiper:
 const bannerSlideshow = new Swiper(".banner-slideshow .swiper", {
@@ -81,15 +116,15 @@ const projectThumbs = new Swiper(".slideshow-project-thumbs", {
   slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true,
-  breakpoints: {  
+  breakpoints: {
     992: {
-      slidesPerView: 5, 
+      slidesPerView: 5,
     },
     1400: {
       slidesPerView: 6,
     },
   },
-}); 
+});
 const slideshowProject = new Swiper(".slideshow-project .swiper", {
   loop: true,
   spaceBetween: 10,
@@ -99,7 +134,7 @@ const slideshowProject = new Swiper(".slideshow-project .swiper", {
   navigation: {
     nextEl: ".slideshow-project .swiper-button-next",
     prevEl: ".slideshow-project .swiper-button-prev",
-  }, 
+  },
   modules: [Navigation, Autoplay, Thumbs],
   thumbs: {
     swiper: projectThumbs,
@@ -122,7 +157,6 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
   modules: [Navigation, Autoplay, Thumbs],
 });
-
 
 // Function to load Google Maps API script dynamically
 function loadGoogleMapsAPI(callback) {

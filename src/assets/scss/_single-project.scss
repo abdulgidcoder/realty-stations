@@ -15,17 +15,17 @@
       --swiper-pagination-bullet-inactive-color: #fff;
       --swiper-pagination-bullet-inactive-opacity: 0.5;
     }
-   &-thumbs{
-.swiper-slide{
-  opacity: .4;
-  transition: .3s;
-  border: 1px solid var(--gray2);
-  border-radius: var(--border-radius);
-  &-thumb-active{
-    opacity: 1;
-    border-color: var(--primary);
-  } 
-}
+    &-thumbs {
+      .swiper-slide {
+        opacity: 0.4;
+        transition: 0.3s;
+        border: 1px solid var(--gray2);
+        border-radius: var(--border-radius);
+        &-thumb-active {
+          opacity: 1;
+          border-color: var(--primary);
+        }
+      }
     }
   }
   &-price {
@@ -38,20 +38,20 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       padding: 0;
-      @media screen and (max-width: 1400px) {
+      @media screen and (max-width: 992px) {
         grid-template-columns: repeat(3, 1fr);
       }
       @media (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      @media (max-width: 576px) {
-        grid-template-columns: repeat(1, 1fr);
-      }
+      }  
     }
     li {
       display: inline-flex;
       align-items: center;
+      transition: opacity .3s ease; 
+      &.hidden{
+       opacity: 0;  
+      }
       .app-icon {
         color: var(--primary);
         border: 1px solid var(--gray2);

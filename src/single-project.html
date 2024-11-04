@@ -26,20 +26,6 @@
             });15 مشاهدة</span
           >
         </p>
-        <!-- <ul class="list-inline my-2 my-lg-0 text-end">
-          <li class="list-inline-item me-2">
-            <a href="#" class="btn btn-outline-danger btn-sm">
-              @@include('partials/icon.html', { "name": "heart.svg", "classes" :
-              "" });
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#" class="btn btn-outline-danger btn-sm">
-              @@include('partials/icon.html', { "name": "share-alt.svg",
-              "classes" : "" });
-            </a>
-          </li>
-        </ul> -->
       </div>
       <div class="d-md-flex justify-content-md-between align-items-center mb-6">
         <div>
@@ -227,7 +213,7 @@
             <section class="single-project-features app-card mb-4">
               <h5 class="app-card-title mb-4">مميزات</h5>
               <ul>
-                <li>
+                <li class="item">
                   @@include('partials/icon.html', { "name": "home.svg",
                   "classes" : "me-3" });
                   <div class="content">
@@ -235,7 +221,7 @@
                     <strong>عدد الادوار</strong>
                   </div>
                 </li>
-                <li>
+                <li class="item">
                   @@include('partials/icon.html', { "name": "tag.svg", "classes"
                   : "me-3" });
                   <div class="content">
@@ -243,7 +229,7 @@
                     <strong>عدد الغرف</strong>
                   </div>
                 </li>
-                <li>
+                <li class="item">
                   @@include('partials/icon.html', { "name": "flag.svg",
                   "classes" : "me-3" });
                   <div class="content">
@@ -251,7 +237,7 @@
                     <strong>عدد الحمامات</strong>
                   </div>
                 </li>
-                  <li>
+                <li class="item">
                   @@include('partials/icon.html', { "name": "home.svg",
                   "classes" : "me-3" });
                   <div class="content">
@@ -259,7 +245,7 @@
                     <strong>عدد الادوار</strong>
                   </div>
                 </li>
-                <li>
+                <li class="item">
                   @@include('partials/icon.html', { "name": "tag.svg", "classes"
                   : "me-3" });
                   <div class="content">
@@ -267,7 +253,7 @@
                     <strong>عدد الغرف</strong>
                   </div>
                 </li>
-                <li>
+                <li class="item">
                   @@include('partials/icon.html', { "name": "flag.svg",
                   "classes" : "me-3" });
                   <div class="content">
@@ -275,7 +261,7 @@
                     <strong>عدد الحمامات</strong>
                   </div>
                 </li>
-                  <li>
+                <li class="item">
                   @@include('partials/icon.html', { "name": "home.svg",
                   "classes" : "me-3" });
                   <div class="content">
@@ -283,15 +269,56 @@
                     <strong>عدد الادوار</strong>
                   </div>
                 </li>
-                <li>
+                <li class="item">
                   @@include('partials/icon.html', { "name": "tag.svg", "classes"
                   : "me-3" });
                   <div class="content">
                     <span>15</span>
                     <strong>عدد الغرف</strong>
                   </div>
-                </li> 
+                </li>
+                <li class="item">
+                  @@include('partials/icon.html', { "name": "tag.svg", "classes"
+                  : "me-3" });
+                  <div class="content">
+                    <span>15</span>
+                    <strong>عدد الغرف</strong>
+                  </div>
+                </li>
+                <li class="item">
+                  @@include('partials/icon.html', { "name": "flag.svg",
+                  "classes" : "me-3" });
+                  <div class="content">
+                    <span>15</span>
+                    <strong>عدد الحمامات</strong>
+                  </div>
+                </li>
+                <li class="item">
+                  @@include('partials/icon.html', { "name": "home.svg",
+                  "classes" : "me-3" });
+                  <div class="content">
+                    <span>15</span>
+                    <strong>عدد الادوار</strong>
+                  </div>
+                </li>
+                <li class="item">
+                  @@include('partials/icon.html', { "name": "tag.svg", "classes"
+                  : "me-3" });
+                  <div class="content">
+                    <span>15</span>
+                    <strong>عدد الغرف</strong>
+                  </div>
+                </li>
+                <li></li>
               </ul>
+              <div class="d-flex justify-content-end">
+                <button
+                  id="project-features_show-more"
+                  class="btn btn-sm btn-outline-danger show-more"
+                >
+                  عرض اكثر
+                </button>
+              </div>
             </section>
             <section class="app-card mb-4">
               <h5 class="app-card-title mb-4">تفاصيل اضافية</h5>
@@ -345,30 +372,32 @@
                   @@include('partials/icon.html', { "name": "download.svg",
                   "classes" : "me-2" }); تحميل PDF</a
                 >
-                <div class="row row-col-2 g-2">
-                  <div class="col">
-                    <a
-                      href="./project-updates.html"
-                      class="btn btn-outline-secondary w-100"
-                    >
-                      @@include('partials/icon.html', { "name": "reload.svg",
-                      "classes" : "me-2" }); تحديثات المشروع</a
-                    >
-                  </div>
+                <a
+                  href="./project-updates.html"
+                  class="mb-3 btn btn-outline-secondary w-100"
+                >
+                  @@include('partials/icon.html', { "name": "reload.svg",
+                  "classes" : "me-2" }); تحديثات المشروع</a
+                >
+                <div class="row row-col-3 g-3 justify-content-center">
                   <div class="col-auto">
                     <a href="./inquiries.html" class="btn btn-outline-danger">
                       @@include('partials/icon.html', { "name": "flag.svg",
                       "classes" : "" });
                     </a>
                   </div>
-                  <div class="col-auto"> <a href="#" class="btn btn-outline-danger">
-              @@include('partials/icon.html', { "name": "heart.svg", "classes" :
-              "" });
-            </a>    </div> <div class="col-auto">
- <a href="#" class="btn btn-outline-danger">
-              @@include('partials/icon.html', { "name": "share-alt.svg",
-              "classes" : "" });
-            </a>    </div>
+                  <div class="col-auto">
+                    <a href="#" class="btn btn-outline-danger">
+                      @@include('partials/icon.html', { "name": "heart.svg",
+                      "classes" : "" });
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#" class="btn btn-outline-danger">
+                      @@include('partials/icon.html', { "name": "share-alt.svg",
+                      "classes" : "" });
+                    </a>
+                  </div>
                 </div>
               </section>
               <section class="app-card mb-4">
@@ -407,6 +436,27 @@
                     >واتساب</a
                   >
                 </div>
+              </section>
+              <section class="app-card mb-4">
+                <h6 class="app-card-title">الترخيص</h6>
+                <ol class="list-group list-group-flush">
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center px-0"
+                  >
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">تاريخ الرخصة</div>
+                    </div>
+                    2022-10-16
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center px-0"
+                  >
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">رقم الرخصة</div>
+                    </div>
+                    240111
+                  </li>
+                </ol>
               </section>
               <section class="app-card mb-4">
                 <h6 class="app-card-title">مدير الحجوزات</h6>
